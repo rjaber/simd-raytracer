@@ -47,13 +47,13 @@ Building Instructions
 - For a single-threaded ray tracer add the option "-DRT_SINGLE_THREADED" when compiling.
 - For buffer overflow detection add the option `-DRT_DEBUG_BUFFER_OVERFLOW".
 
-- Windows MSVC (Tested with MSVC 2013)
+- Windows MSVC (Tested with MSVC 2013)  
 x86:  
 ```bash
 cl -O2 -Oi -Ot -EHsc -nologo raytracer.cpp
 ```
 
-- Linux GCC (Tested with gcc 4.8)
+- Linux GCC (Tested with gcc 4.8)  
 x86-32:  
 ```bash
 g++ -m32 -O3 -msse4 -std=c++11 -pthread -DNDEBUG -o raytracer raytracer.cpp 
