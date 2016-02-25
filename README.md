@@ -14,6 +14,10 @@ while keeping the ray tracer simple (no algorithmic optimizations related to spa
 This raytracer makes heavy use of SIMD intrinsic instructions as well as a thread pool to distribute
 the ray tracing work evenly over multicores in modern processors.
 
+Screenshots
+===========
+![Alt text](./docs/screenshots/spheres.jpg?raw=true "Spheres")
+
 Usage
 =====
 The raytracer application takes two arguments: 
@@ -28,13 +32,13 @@ Create a text file and insert a "1" wherever you wish to place a sphere and a sp
 Also, ensure that the last line is a carriage return. For example, to render a raytraced image with the word "C++",
 create a text file containing the following:
 
-111111
-1           1          1
-1           1          1
-1        1111111    1111111
-1           1          1
-1           1          1
-111111
+111111  
+1           1          1  
+1           1          1  
+1        1111111    1111111  
+1           1          1  
+1           1          1  
+111111  
 
 Note: The ray tracer cannot take more than 255 spheres. Maximum frame size is 64x12 spheres.
 
@@ -44,18 +48,18 @@ Building Instructions
 - For buffer overflow detection add the option `-DRT_DEBUG_BUFFER_OVERFLOW".
 
 - Windows MSVC (Tested with MSVC 2013)
-x86:
+x86:  
 ```bash
 cl -O2 -Oi -Ot -EHsc -nologo raytracer.cpp
 ```
 
 - Linux GCC (Tested with gcc 4.8)
-x86-32:
+x86-32:  
 ```bash
 g++ -m32 -O3 -msse4 -std=c++11 -pthread -DNDEBUG -o raytracer raytracer.cpp 
 ```
 
-x86-64:
+x86-64:  
 ```bash
 g++ -O3 -msse4 -std=c++11 -pthread -DNDEBUG -o raytracer raytracer.cpp 
 ```
