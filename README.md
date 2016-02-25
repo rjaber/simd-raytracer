@@ -1,6 +1,12 @@
 # simd-raytracer
 Multithreaded sphere ray tracer optimized with SIMD intrinsics
 
+- Ray tracing divided into tasks submitted to a thread pool making full use of  multicore systems.
+- Ray tracing algorithm is entirely programmed using x86 SSE SIMD intrinsics.
+- Includes custom memory allocator, memory alignment, and buffer overflow protection.
+- Multiplatform: Supports Windows and Linux (x86-32 & x86-64)
+- Technologies: C++11, STL, SSE SIMD, Multithreading, Custom Memory Allocator, Git
+
 About
 =====
 This is a sphere ray tracer mostly done for educational purposes. The main focus is on performance
