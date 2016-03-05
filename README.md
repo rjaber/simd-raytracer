@@ -48,6 +48,7 @@ Building Instructions
 - For buffer overflow detection add the option `-DRT_DEBUG_BUFFER_OVERFLOW".
 
 - Windows MSVC (Tested with MSVC 2013)  
+
 x86:  
 ```bash
 cl -O2 -Oi -Ot -EHsc -nologo raytracer.cpp
