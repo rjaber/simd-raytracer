@@ -26,8 +26,10 @@ arg2: resolution factor ( 1 <= resolution <= 4 ). If missing, the factor is set 
 	  the more rays are shot at the scene yielding a more crispy look.
  
  Examples:
+ ```bash
 ./raytracer d	<-- (resolution is "1" by default)
 ./raytracer ascii_art.txt 2 
+```
 Create a text file and insert a "1" wherever you wish to place a sphere and a space (NOT a tab!) to separate the "1"s.
 Also, ensure that the last line is a carriage return. For example, to render a raytraced image with the word "C++",
 create a text file containing the following:
