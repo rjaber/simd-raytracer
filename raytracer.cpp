@@ -933,7 +933,7 @@ int main(int argc, char *argv[])
 
 			assert(xresolution <= 4);
 			if (xresolution > 4) {
-				std::cout << "The maximum resolution is 9" << std::endl;
+				std::cout << "The maximum resolution is 4" << std::endl;
 				return 0;
 			}
 		}
