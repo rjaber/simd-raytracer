@@ -31,7 +31,7 @@ arg2: resolution factor ( 1 <= resolution <= 4 ). If missing, the factor is set 
 Create a text file and insert a "1" wherever you wish to place a sphere and a space (NOT a tab!) to separate the "1"s.
 Also, ensure that the last line is a carriage return. For example, to render a raytraced image with the word "C++",
 create a text file containing the following:
-
+```bash
 111111  
 1           1          1  
 1           1          1  
@@ -39,7 +39,7 @@ create a text file containing the following:
 1           1          1  
 1           1          1  
 111111  
-
+```
 Note: The ray tracer cannot take more than 255 spheres. Maximum frame size is 64x12 spheres.
 
 Building Instructions
