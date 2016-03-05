@@ -53,7 +53,8 @@ x86:
 cl -O2 -Oi -Ot -EHsc -nologo raytracer.cpp
 ```
 
-- Linux GCC (Tested with gcc 4.8)  
+- Linux GCC (Tested with gcc 4.8) 
+
 x86-32:  
 ```bash
 g++ -m32 -O3 -msse4 -std=c++11 -pthread -DNDEBUG -o raytracer raytracer.cpp 
