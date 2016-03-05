@@ -21,12 +21,13 @@ Screenshots
 Usage
 =====
 The raytracer application takes two arguments: 
+```bash
 arg1: ascii art file name w/ extention (i.e image.txt) following the format described below or "d" for the default image.
 arg2: resolution factor ( 1 <= resolution <= 4 ). If missing, the factor is set to "1" by default, the higher the factor
 	  the more rays are shot at the scene yielding a more crispy look.
  
  Examples:
- ```bash
+ 
 ./raytracer d	<-- (resolution is "1" by default)
 ./raytracer ascii_art.txt 2 
 ```
