@@ -1097,7 +1097,7 @@ int main(int argc, char *argv[])
 		rtm.spheres.b[idx++] = 1.0f;
 	}
 
-	//Spehere representing the floor
+	//Sphere representing the floor
 	rtm.spheres.x[idx] = 0.0f;
 	rtm.spheres.y[idx] = -10004.0f;
 	rtm.spheres.z[idx] = -20.0f;
